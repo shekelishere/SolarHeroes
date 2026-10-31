@@ -1,0 +1,21 @@
+name: SolarHeroes
+version: '1.0.0'
+main: me.shekel.heroes.SolarHeroes
+api-version: '26.2'
+author: Shekel
+description: Play as Solar, Dark, Phantom and Nas.
+
+commands:
+  hero:
+    description: Become a hero (Solar, Dark, Phantom or Nas).
+    usage: /hero <solar|dark|phantom|nas|none|item>
+    aliases: [heroes]
+    permission: heroes.use
+
+permissions:
+  heroes.use:
+    description: Use /hero to become a hero.
+    default: true
+  heroes.admin:
+    description: Use /hero set to change other players' heroes.
+    default: op
